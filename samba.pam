@@ -1,0 +1,14 @@
+# @include common-auth
+# @include common-account
+# @include common-session-noninteractive
+
+#auth       required     /lib/x86_64-linux-gnu/security/pam_samba.so   debug
+#account    required     /lib/x86_64-linux-gnu/security/pam_samba.so   debug
+#session    required     /lib/x86_64-linux-gnu/security/pam_samba.so   debug
+#password   required     /lib/x86_64-linux-gnu/security/pam_samba.so   debug
+
+auth       required     pam_samba.so
+account    required     pam_samba.so
+session    required     pam_samba.so
+password   required     pam_samba.so
+

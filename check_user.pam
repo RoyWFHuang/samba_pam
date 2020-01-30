@@ -1,0 +1,2 @@
+auth sufficient check_user.so
+account sufficient check_user.so
